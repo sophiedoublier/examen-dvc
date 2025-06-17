@@ -21,3 +21,7 @@ Vous pouvez télécharger les données à travers le lien suivant : https://data
 
 Ajout Sophie DOUBLIER
 Lorsque j'ai crée un nouvel environnement, le fichier requirements.txt ne semble pas avoir été inclus dans le depot GitHuk que j'ai forké. Je le crée partant du fichier requirements proposé dans le cours (Template_accidents_MLOps) et je retire les outils inutiles quite à les installer si besoin lors de l'éxécution de mon script.
+
+Pour le choix du modèle, j'ai choisi le Gradient Boosting et j'aurais pu prendre le Random Forest car ces deux modèles semblent particulièrement adaptés aux jeux de données tabulaires avec des relations potentiellement non linéaires entre les variables explicatives et la variable cible. GradientBoosting va réduire à la fois le biais et la variable du modèle. Il est à privilégier pour des taches de régression sur des données industrielles comme la prédiction de la concentration de silice. 
+
+Avant la normalisation des données, il a été nécessaire de modifier le fichier normalize_data.py et supprimer la première colonne 'date' qui n'est pas une colonne numérique.
