@@ -1,2 +1,20 @@
-/venv
-/clean_data.csv
+# Ignorer l'environnement virtuel Python 
+/exam
+
+# Ignorer les données et modèles lourds
+data/
+models/
+metrics/
+
+# Mais suivre les fichiers de suivi DVC
+!data/.gitkeep
+!models/.gitkeep
+!metrics/.gitkeep
+!data/**/*.dvc
+!models/**/*.dvc
+!metrics/**/*.dvc
+!.dvc/config
+
+# Fichiers DVC à versionner
+.dvc/
+.dvcignore

@@ -1,0 +1,10 @@
+[core]
+    remote = remote_storage
+    autostage = true
+['remote "remote_storage"']
+    url = ../../dvc_remote
+['remote "origin"']
+    url = https://dagshub.com/sophiedoublier/examen-dvc.dvc
+    auth = basic
+    user = sophiedoublier
+    ask_password = true
