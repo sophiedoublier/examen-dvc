@@ -13,8 +13,10 @@ metrics/
 !data/**/*.dvc
 !models/**/*.dvc
 !metrics/**/*.dvc
+
+.dvc/
+!.dvc
 !.dvc/config
 
 # Fichiers DVC à versionner
-.dvc/
 .dvcignore
